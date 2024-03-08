@@ -5,3 +5,5 @@ NextJs
 Clerk.com for Authentication! and middleware
 
 https://github.com/pmndrs/zustand -- state mgmt
+npx prisma db push
+npx prisma studio

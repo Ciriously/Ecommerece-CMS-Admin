@@ -19,3 +19,20 @@ const SetupPage = () => {
 };
 
 export default SetupPage;
+
+// import prismadb from "@/lib/prismadb";
+
+// export default async function Home() {
+//   const clothes = await prismadb.clothes.findMany();
+
+//   return (
+//     <div>
+//       {clothes.map((cloth) => (
+//         <div>
+//           {/* <h1>{cloth.name}</h1> */}
+//           <p>{cloth.title}</p>
+//         </div>
+//       ))}
+//     </div>
+//   );
+// }
