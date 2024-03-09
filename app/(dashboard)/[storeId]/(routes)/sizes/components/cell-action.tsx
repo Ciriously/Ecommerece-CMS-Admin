@@ -31,10 +31,15 @@ export const CellAction: React.FC<CellActionProps> = ({ data }) => {
   const onConfirm = async () => {
     try {
       setLoading(true);
-      await axios.delete(`/api/${params.storeId}/sizes/${data.id}`);
+      console.log("Sending DELETE request...");
+      const response = await axios.delete(
+        `/api/${params.storeId}/sizes/${data.id}`
+      );
+      console.log("Response:", response);
       toast.success("Size deleted.");
       router.refresh();
     } catch (error) {
+      console.error("Error:", error);
       toast.error("Make sure you removed all products using this size first.");
     } finally {
       setOpen(false);
